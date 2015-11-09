@@ -6,7 +6,7 @@ import pysam
 # Remove reads with informed partial alignments to regions other than
 # the D-loop.
 # BAM files must be sorted by queryname. Provide read length
-
+# usage python rm_chim_in_pair.py BAMFILE [READLENGTH]
 
 def check_chim(read):
     tags = dict(read.tags)
